@@ -1,0 +1,19 @@
+<h1>Er zijn {{ aantal_woorden }} woorden in uw text</h1>
+
+<a href="{% url 'home' %}">Niewe tekst</a>
+
+<h1>Uw text:</h1>
+{{ volledigtext }}
+
+<h1>Woord geteld:</h1>
+
+{% for woorden, getelde_woorden in gesorteerde_woorden %}
+
+{{ woorden }} - {{ getelde_woorden }}
+<br />
+
+
+
+{% endfor %}
+
+<!-- {{ woorden_na_telling }} -->

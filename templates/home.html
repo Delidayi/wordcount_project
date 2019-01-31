@@ -1,0 +1,11 @@
+<h1>WOORD TELLEN APP</h1>
+
+<a href="{% url 'about' %}">Over ons <br></a>
+<br>
+
+<form action="{% url 'count' %}">
+  <textarea name="volledigtext" rows="10" cols="40"></textarea>
+  <br>
+  <input type="submit" value="Tellen!" />
+
+</form>
